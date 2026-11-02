@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Request a beauty appointment at T&T’s Beauty Salon using our online booking form.">
+<meta name="robots" content="index, follow">
+<title>T&T's Beauty Salon | Online Booking</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="container header-content">
+<a class="logo" href="index.html">T&amp;T's <span>BEAUTY SALON</span></a>
+<nav class="main-nav">
+<a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a><a href="booking.html" aria-current="page">Online Booking</a><a href="enquiry.html">Enquiries</a><a href="contact.html">Contact Us</a>
+</nav></div></header><main><section class="page-banner"><div class="container"><p class="eyebrow">ONLINE BOOKING</p><h1>Book Your Appointment</h1><p>Send us your preferred service, date and time.</p></div></section>
+<section class="section"><div class="container two-column"><div><h2>Make a Booking</h2><p>Complete the form and the salon can contact you to confirm the appointment.</p></div>
+<form class="booking-form" id="bookingForm" novalidate><label for="bookingName">Full Name *</label><input id="bookingName" name="name" type="text" required minlength="2" autocomplete="name">
+<label for="bookingPhone">Phone Number *</label><input id="bookingPhone" name="phone" type="tel" required pattern="[0-9+() -]{7,20}" autocomplete="tel"><label for="bookingEmail">Email Address *</label><input id="bookingEmail" name="email" type="email" required autocomplete="email">
+<label for="bookingService">Service *</label><select id="bookingService" name="service" required><option value="">Choose a service</option><option>Hair Styling</option><option>Braiding</option><option>Manicure</option><option>Pedicure</option><option>Makeup</option><option>Lashes &amp; Skincare</option></select>
+<label for="bookingDate">Preferred Date *</label><input id="bookingDate" name="date" type="date" required><label for="bookingTime">Preferred Time *</label><input id="bookingTime" name="time" type="time" required>
+<label for="bookingNotes">Additional Enquiry</label><textarea id="bookingNotes" name="notes" rows="5"></textarea><button class="button" type="submit">Check Booking Request</button><p id="bookingFeedback" class="form-message" aria-live="polite" hidden></p><p class="form-note">Demo form: this validates your request in the browser but does not reserve a real appointment.</p></form></div></section><script src="booking.js" defer></script></main><footer><p>&copy; 2026 T&amp;T's Beauty Salon | Web Development Project – WEDE5020</p></footer></body></html>
